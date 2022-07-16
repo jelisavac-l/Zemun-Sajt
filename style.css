@@ -1,0 +1,80 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+p, li{
+    font-size: large;
+}
+
+hr{
+    color: grey;
+}
+#home{
+    background:linear-gradient(0deg, rgba(19, 16, 17, 0.87), rgba(26, 19, 23, 0.884)), url("assets/munze.jpg");
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+#izrada{
+    background:linear-gradient(0deg, rgba(19, 16, 17, 0.87), rgba(26, 19, 23, 0.884)), url("assets/arbeit.jpg");
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+#info{
+    background:linear-gradient(0deg, rgba(19, 16, 17, 0.90), rgba(26, 19, 23, 0.90)), url("assets/dzoni.jpg");
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-dark{
+    color: black;
+}
+
+.landing-text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.typing{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    margin-left: 10px;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
