@@ -1,4 +1,4 @@
-html{
+*{
     scroll-behavior: smooth;
 }
 
@@ -6,9 +6,16 @@ html, body {
     height: 100%;
     width: 100%;
     color: #FFF;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 }
 body::-webkit-scrollbar{
     display: none;
+}
+
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 p, li{
@@ -19,7 +26,8 @@ hr{
     color: grey;
 }
 #home{
-    background:linear-gradient(0deg, rgba(19, 16, 17, 0.75), rgba(26, 19, 23, 0.75)), url("https://img.olympicchannel.com/images/image/private/t_16-9_1280/primary/gpnbvq0vhb9dbd43lnmj");
+    /*background:linear-gradient(0deg, rgba(19, 16, 17, 0.75), rgba(26, 19, 23, 0.75)), url("https://img.olympicchannel.com/images/image/private/t_16-9_1280/primary/gpnbvq0vhb9dbd43lnmj");*/
+    background:linear-gradient(0deg, rgba(19, 16, 17, 0.75), rgba(26, 19, 23, 0.75)), url("assets/img2.JPG");
     display: table;
     height: 100%;
     width: 100%;
@@ -57,11 +65,13 @@ hr{
 
 .typing{
     font-family: 'Courier New', Courier, monospace;
+	color: white;
     position: relative;
     margin-left: 10px;
 }
 
 .typing::after{
+	color: white;
     content: "";
     position: absolute;
     right: -5px;

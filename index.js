@@ -1,4 +1,4 @@
-const texts = ['75 godina Zemunskog kajakaštva'];
+const texts = ['77 godina Zemunskog kajakaštva'];
 let count = 0;
 let index = 0;
 let currentText = '';
